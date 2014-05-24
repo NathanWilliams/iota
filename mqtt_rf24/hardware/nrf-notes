@@ -1,0 +1,8 @@
+
+SETUP_RETR (04) - Setup of Automatic Retransmission
+ARD (7:4) - Auto Retransmit Delay (note a & b)
+ARC (3:0) - Auto Retransmit Count
+
+a) Please take care when setting this parameter. If the ACK payload is more than 15 byte in 2Mbps mode the ARD must be 500μS or more, if the ACK payload is more than 5byte in 1Mbps mode the ARD must be 500μS or more. In 250kbps mode (even when the payload is not in ACK) the ARD must be 500μS or more.
+
+b) This is the time the PTX is waiting for an ACK packet before a retransmit is made. The PTX is in RX mode for a minimum of 250μS, but it stays in RX mode to the end of the packet if that is longer than 250μS. Then it goes to standby-I mode for the rest of the specified ARD. After the ARD it goes to TX mode and then retransmits the packet.
