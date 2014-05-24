@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="exporter-version" content="Evernote Mac 5.5.1 (402628)"/><meta name="author" content="Nathan Williams"/><meta name="created" content="2014-05-06 21:32:37 +0000"/><meta name="updated" content="2014-05-06 21:45:09 +0000"/><title>Breadboard radio wiring</title></head><body style="word-wrap: break-word; -webkit-nbsp-mode: space; -webkit-line-break: after-white-space;">
+<div>
+<table border="1" width="40%" cellspacing="0" cellpadding="2">
+<tbody>
+<tr>
+<td valign="top">Radio</td>
+<td valign="top">AVR</td>
+<td valign="top">Notes</td>
+</tr>
+<tr>
+<td valign="top">1 - GND</td>
+<td valign="top">-</td>
+<td valign="top"><br/></td>
+</tr>
+<tr>
+<td valign="top">2 - VCC</td>
+<td valign="top">-</td>
+<td valign="top"><br/></td>
+</tr>
+<tr>
+<td valign="top">3 - CE (Chip Enable)</td>
+<td valign="top">PB0</td>
+<td valign="top">Arduino 8</td>
+</tr>
+<tr>
+<td valign="top">4 - CSN (Chip Select)</td>
+<td valign="top">PB1</td>
+<td valign="top">Arduino 9</td>
+</tr>
+<tr>
+<td valign="top">5 - SCK</td>
+<td valign="top">PB5</td>
+<td valign="top">Arduino 13</td>
+</tr>
+<tr>
+<td valign="top">6 - MOSI</td>
+<td valign="top">PB3</td>
+<td valign="top">Arduino 11</td>
+</tr>
+<tr>
+<td valign="top">7 - MISO</td>
+<td valign="top">PB4</td>
+<td valign="top">Arduino 12</td>
+</tr>
+<tr>
+<td valign="top">8 - IRQ</td>
+<td valign="top">PD2</td>
+<td valign="top">Arduino 2</td>
+</tr>
+<tr>
+<td valign="top"><br/></td>
+<td valign="top">PD7</td>
+<td valign="top">“role pin” Arduino 7</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div><span><br/></span></div>
+<div><span>The ‘role’ pin is used by the pingpair_irq.ino example that I plan to use to test this setup.</span></div>
+<div><span><br/></span></div>
+<div><span><b>Reference:</b></span></div>
+<span><img src="bb_test/24L01Pinout-800.jpg" height="367" width="800"/></span>
+<div><span><img src="bb_test/Atmega168PinMap2.png" height="407" width="609"/></span>
+<div><span><br/></span></div>
+<div><span><br/></span></div>
+<div><span><br/></span></div>
+<div><span><br/></span></div>
+</div>
+</body></html>
